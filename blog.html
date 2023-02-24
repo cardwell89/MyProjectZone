@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The blog articles</h1>
+
+    <p></p>
+
+    <script>
+        const api_url = 'https://newsapi.org/v2/everything?q=as&apiKey=6f81efa391a242bc866aca2db6f64839'
+        async function getIIS(){
+            const response = await fetch(api_url);
+            const data = await response.json();
+            //const{ author, content} = data
+            
+            console.log(data);
+            //console.log(data.content);
+
+            //document.getElementById(author);
+
+                }
+        getIIS();
+
+        
+
+
+
+</script>
+</body>
+</html>
